@@ -1,3 +1,3 @@
-import Stack from './stack';
+import * as stackExamples from './stack/examples';
 
-const stack = new Stack();
+console.log('isPolindrome()', stackExamples.isPolindrome('redivider'));
