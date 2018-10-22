@@ -19,3 +19,17 @@ export const isPolindrome = (word: string): boolean => {
 
   return false;
 }
+
+export const factorial = (n: number): number => {
+  const stack = new Stack<number>();
+  while (n > 1) {
+    stack.push(n--);
+  }
+
+  let product = 1;
+  while(stack.length() > 0) {
+    product *= stack.pop()!;
+  }
+
+  return product;
+}

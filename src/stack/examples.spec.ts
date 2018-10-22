@@ -13,3 +13,11 @@ describe('#isPolindrome()', () => {
     });
   });
 })
+
+describe('#factorial', () => {
+  describe('when passed param equal to 5', () => {
+    it('should return 120', () => {
+      expect(examples.factorial(5)).toBe(120);
+    })
+  })
+})
